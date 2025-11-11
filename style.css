@@ -481,4 +481,66 @@ main, section, .content, .patch-notes, .releases {
         text-shadow: 0 2px 6px rgba(255,122,26,0.3);
     }
 
+.countdown-paladium {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Press Start 2P', monospace; /* monospace pour GitHub safe */
+}
+
+.countdown-text {
+    color: var(--accent-light);
+    font-size: 1.5rem;        /* taille initiale du texte */
+    white-space: nowrap;      /* empêche le passage à la ligne */
+    overflow: hidden;         /* coupe si trop long */
+    text-overflow: ellipsis;  /* affiche "..." si texte trop long */
+    margin-bottom: 1rem;
+}
+
+/* Timer Paladium */
+.timer-paladium {
+    display: inline-flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;          /* permet de passer à la ligne sur petit écran */
+    justify-content: center;
+}
+
+.timer-paladium .digit,
+.timer-paladium .separator {
+    background: rgba(0,0,0,0.7);
+    color: var(--accent);
+    padding: 1rem 0.8rem;
+    border: 2px solid var(--accent-light);
+    border-radius: 6px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(255,122,26,0.5);
+}
+
+/* Séparateurs plus petits */
+.timer-paladium .separator {
+    background: none;
+    border: none;
+    color: var(--accent-light);
+    font-size: 2rem;
+    padding: 1rem 0.4rem;
+    text-shadow: 0 2px 6px rgba(255,122,26,0.3);
+}
+
+/* --- Responsive --- */
+@media(max-width:768px) {
+    .countdown-text {
+        font-size: 1rem; /* texte plus petit sur mobile */
+    }
+
+    .timer-paladium .digit,
+    .timer-paladium .separator {
+        font-size: 1.5rem;   /* chiffres plus petits sur mobile */
+        padding: 0.6rem 0.4rem;
+    }
+
+    .timer-paladium .separator {
+        font-size: 1.2rem;
+        padding: 0.6rem 0.3rem;
+    }
+}
 
