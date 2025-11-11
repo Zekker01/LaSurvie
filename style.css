@@ -450,11 +450,11 @@ main, section, .content, .patch-notes, .releases {
 }
 
 .countdown p {
-    font-size: 1.2rem; /* taille du texte "Ouverture du serveur dans :" */
+    font-size: 5rem; /* taille du texte "Ouverture du serveur dans :" */
 }
 
 .countdown #timer {
-    font-size: 2rem; /* taille des chiffres */
+    font-size: 10rem; /* taille des chiffres */
     margin-top: 0.5rem;
     display: inline-block;
     background: rgba(0,0,0,0.5);
