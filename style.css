@@ -440,22 +440,27 @@ main, section, .content, .patch-notes, .releases {
     }
 }
 
+/cooldown
 .countdown {
     margin: 2rem 0;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
     color: var(--accent-light);
-    text-shadow: 0 2px 10px rgba(255,122,26,0.3);
+    text-shadow: 0 4px 20px rgba(255,122,26,0.4);
+}
+
+.countdown p {
+    font-size: 1.2rem; /* taille du texte "Ouverture du serveur dans :" */
 }
 
 .countdown #timer {
-    font-size: 1.2rem;
+    font-size: 2rem; /* taille des chiffres */
     margin-top: 0.5rem;
     display: inline-block;
-    background: rgba(0,0,0,0.4);
-    padding: 0.8rem 1.2rem;
-    border-radius: 12px;
-    letter-spacing: 1px;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+    letter-spacing: 2px;
 }
 
 .countdown #timer span {
