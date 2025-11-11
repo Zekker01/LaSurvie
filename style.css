@@ -440,7 +440,6 @@ main, section, .content, .patch-notes, .releases {
     }
 }
 
-/cooldown
 .countdown {
     margin: 2rem 0;
     text-align: center;
@@ -450,20 +449,20 @@ main, section, .content, .patch-notes, .releases {
 }
 
 .countdown p {
-    font-size: 5rem; /* taille du texte "Ouverture du serveur dans :" */
+    font-size: 1.5rem; /* texte au-dessus */
+    margin-bottom: 1rem;
 }
 
-.countdown #timer {
-    font-size: 10rem; /* taille des chiffres */
-    margin-top: 0.5rem;
+.countdown .timer {
+    font-size: 3rem; /* chiffres plus grands */
     display: inline-block;
     background: rgba(0,0,0,0.5);
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 14px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 
-.countdown #timer span {
-    font-weight: bold;
+.countdown .timer span {
     color: var(--accent);
 }
