@@ -449,12 +449,12 @@ main, section, .content, .patch-notes, .releases {
 }
 
 .countdown p {
-    font-size: 3rem; /* texte au-dessus */
+    font-size: 1rem; /* texte au-dessus */
     margin-bottom: 1rem;
 }
 
 .countdown .timer {
-    font-size: 12rem; /* chiffres plus grands */
+    font-size: 14rem; /* chiffres plus grands */
     display: inline-block;
     background: rgba(0,0,0,0.5);
     padding: 1.5rem 2rem;
