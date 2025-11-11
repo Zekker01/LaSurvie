@@ -499,3 +499,37 @@ main, section, .content, .patch-notes, .releases {
     }
 }
 
+/* ====== Widget Discord ====== */
+.discord-widget {
+    text-align: center;
+    margin: 4rem 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.discord-widget h2 {
+    color: var(--accent-light);
+    text-shadow: 0 3px 12px rgba(255,122,26,0.4);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* Style du cadre Discord */
+.discord-widget iframe {
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(255,122,26,0.3);
+    border: 2px solid var(--accent);
+    width: 90%;
+    max-width: 400px;
+    height: 500px;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+    .discord-widget h2 {
+        font-size: 1rem;
+    }
+    .discord-widget iframe {
+        height: 400px;
+        max-width: 320px;
+    }
+}
